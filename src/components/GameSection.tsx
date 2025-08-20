@@ -1,9 +1,9 @@
 'use client'
 
-import { useState, useEffect, useRef, useCallback } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
+import { AnimatePresence, motion } from 'framer-motion'
+import { Play, RotateCcw, Space, Star, Target, Timer, Trophy, Zap } from 'lucide-react'
+import { useEffect, useRef, useState } from 'react'
 import { useInView } from 'react-intersection-observer'
-import { Target, Trophy, RotateCcw, Zap, Timer, Star, Play, Pause, Space } from 'lucide-react'
 
 interface DartHit {
   x: number
@@ -292,8 +292,11 @@ export function GameSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
+          <h5 className=" font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent mb-4">
+            Getting bored reaching here 👀 ?? 
+          </h5>
           <h2 className="text-5xl font-bold bg-gradient-to-r from-orange-400 to-red-400 bg-clip-text text-transparent mb-4">
-            Flutter Interactive Games
+           Lets Play Some Games
           </h2>
           <p className="text-xl text-gray-300 dark:text-gray-400 max-w-2xl mx-auto">
             Choose your challenge! Master different skills with keyboard-controlled games.

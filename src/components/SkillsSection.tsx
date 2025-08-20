@@ -1,8 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { useInView } from 'react-intersection-observer'
 import { useState } from 'react'
+import { useInView } from 'react-intersection-observer'
 
 const skills = [
   { name: "Flutter", level: 95, color: "from-blue-400 to-blue-600", icon: "🦋" },
@@ -11,17 +11,18 @@ const skills = [
   { name: "REST APIs", level: 90, color: "from-green-400 to-green-600", icon: "🔗" },
   { name: "SQLite", level: 85, color: "from-purple-400 to-purple-600", icon: "🗃️" },
   { name: "Git", level: 87, color: "from-red-400 to-red-600", icon: "📚" },
+  { name: "C++", level: 65, color: "from-blue-400 to-blue-600", icon: "👨‍💻" },
+  { name: "Node.js", level: 65, color: "from-yellow-400 to-yellow-600", icon: "📦" },
 ]
 
 const technologies = [
   { name: "Flutter", description: "Cross-platform mobile development", icon: "🦋" },
   { name: "Dart", description: "Modern programming language", icon: "🎯" },
-  { name: "Firebase", description: "Backend & Analytics", icon: "🔥" },
-  { name: "Provider", description: "State management", icon: "📦" },
-  { name: "Riverpod", description: "Advanced state management", icon: "🌊" },
-  { name: "Hive", description: "Lightweight database", icon: "🍯" },
-  { name: "GraphQL", description: "API query language", icon: "🔍" },
-  { name: "Figma", description: "UI/UX Design", icon: "🎨" },
+  { name: "Firebase/OneSignal", description: "Backend & Analytics, Push Notifications", icon: "🔥" },
+  { name: "Riverpod/Bloc", description: "Advanced state management", icon: "🌊" },
+  { name: "Hive/Sqlite", description: "Lightweight database", icon: "🍯" },
+  { name: "GitHub/GitLab", description: "Version control", icon: "📚" },
+  { name: "Animation/Custom UI", description: "UI/UX", icon: "🎨" },
 ]
 
 export function SkillsSection() {
@@ -173,7 +174,7 @@ export function SkillsSection() {
               &nbsp;&nbsp;&nbsp;&nbsp;<span className="text-purple-400">return</span> <span className="text-yellow-400">MaterialApp</span>(<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;home: <span className="text-yellow-400">Scaffold</span>(<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;body: <span className="text-yellow-400">Center</span>(<br/>
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;child: <span className="text-yellow-400">Text</span>(<span className="text-green-400">'Hello Flutter!'</span>),<br/>
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;child: <span className="text-yellow-400">Text</span>(<span className="text-green-400">'Hello, Welcome to my Portfolio!'</span>),<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;),<br/>
               &nbsp;&nbsp;&nbsp;&nbsp;);<br/>

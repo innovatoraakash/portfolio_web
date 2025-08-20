@@ -98,6 +98,8 @@ export function ContactSection() {
     setIsSubmitting(true)
 
     // Simulate form submission
+    //TODO send form to email
+    
     await new Promise(resolve => setTimeout(resolve, 2000))
 
     setIsSubmitting(false)
@@ -108,10 +110,10 @@ export function ContactSection() {
   }
 
   const socialLinks = [
-    { icon: <Github size={24} />, href: "https://github.com", label: "GitHub", color: "hover:text-gray-400" },
-    { icon: <Linkedin size={24} />, href: "https://linkedin.com", label: "LinkedIn", color: "hover:text-blue-400" },
+    { icon: <Github size={24} />, href: "https://github.com/innovatoraakash", label: "GitHub", color: "hover:text-gray-400" },
+    { icon: <Linkedin size={24} />, href: "https://www.linkedin.com/in/aakash-ghimire-a36249166", label: "LinkedIn", color: "hover:text-blue-400" },
     { icon: <Twitter size={24} />, href: "https://twitter.com", label: "Twitter", color: "hover:text-cyan-400" },
-    { icon: <Mail size={24} />, href: "mailto:hello@example.com", label: "Email", color: "hover:text-green-400" },
+    { icon: <Mail size={24} />, href: "mailto:ghimiresky2@gmail.com", label: "Email", color: "hover:text-green-400" },
   ]
 
   return (
@@ -155,7 +157,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Email</h3>
-                  <p className="text-gray-400">hello@flutterdev.com</p>
+                  <p className="text-gray-400">ghimiresky2@gmail.com</p>
                 </div>
               </motion.div>
 
@@ -168,7 +170,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Phone</h3>
-                  <p className="text-gray-400">+1 (555) 123-4567</p>
+                  <p className="text-gray-400">+977 9867204506</p>
                 </div>
               </motion.div>
 
@@ -181,7 +183,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Location</h3>
-                  <p className="text-gray-400">San Francisco, CA</p>
+                  <p className="text-gray-400">Kathmandu, Nepal</p>
                 </div>
               </motion.div>
             </div>

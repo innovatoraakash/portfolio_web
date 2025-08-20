@@ -8,71 +8,59 @@ import { Calendar, MapPin, Code, Award, Users, Rocket } from 'lucide-react'
 const experiences = [
   {
     id: 1,
-    title: "Senior Flutter Developer",
-    company: "TechCorp Solutions",
-    location: "San Francisco, CA",
-    period: "2022 - Present",
+    title: "Senior Associate Flutter Developer",
+    company: "F1Soft International",
+    location: "Pulchowk Lalitpur, Nepal",
+    period: "2024 - Present",
     type: "Full-time",
     achievements: [
-      "Led development of 3 major Flutter applications serving 100K+ users",
-      "Reduced app crash rate by 70% through performance optimization",
-      "Mentored 5 junior developers in Flutter best practices",
-      "Implemented CI/CD pipeline reducing deployment time by 60%"
+      "Actively engaged in designing an open architecture that powers mobile development for F1Soft.",
+      "Researched and implemented several core utilities like Logger Architecture, Custom Navigation,SDK development, and Data Management.",
+      "Designed a security system that ensures all apps built with F1System meet OWASP-recommended standards.",
+      "Mentored 5+ associate developers in Flutter best practices",
+      "Actively contributed to the development of 5+ major Flutter applications serving 100K+ users",
+      "Built complex UI that includes Animations, Complex UI structure which need high customizations, multilevel transitions,  complex mathematics an vector knowledge."
     ],
-    technologies: ["Flutter", "Dart", "Firebase", "GraphQL", "AWS"],
+    technologies: ["Flutter", "Dart", "Firebase", "Huawei", "Architecture", "Design System", "Security", "SDK", "Custom UI", "Animations"],
     color: "from-blue-400 to-purple-600",
     icon: <Rocket size={24} />
   },
   {
     id: 2,
     title: "Flutter Developer",
-    company: "Startup Innovate",
-    location: "Austin, TX",
-    period: "2021 - 2022",
+    company: "Dynamic Technosoft",
+    location: "kathmandu, Nepal",
+    period: "2022 - 2024",
     type: "Full-time",
     achievements: [
-      "Built MVP Flutter app that secured $2M Series A funding",
-      "Developed real-time chat system with 99.9% uptime",
-      "Integrated payment systems supporting multiple currencies",
-      "Collaborated with design team to achieve pixel-perfect UI"
+      "Took lead on ERP app that which served 100+ clients and 1M+ users",
+      "Developed real-time location tracking system, SMS server, POS printing like tools",
+      "Implemented secure payment gateway of Nepal and India",
+      "Implemented purchase and sales, ledger-voucher creation, inventory management, attendance like ERP features",
+      "Mobile UI design with complex graphs, charts, table and animations",
+      "Developed OTT platform with smooth video streaming",
+      "home widget and quick actions for android and IOS"
     ],
-    technologies: ["Flutter", "Firebase", "Stripe", "Socket.io", "REST APIs"],
+    technologies: ["Flutter", "Firebase", "Location", "Socket.io", "REST APIs", "POS", "ERP/HRM"],
     color: "from-green-400 to-emerald-600",
     icon: <Code size={24} />
   },
   {
     id: 3,
-    title: "Mobile App Developer",
-    company: "Digital Agency Pro",
-    location: "Remote",
-    period: "2020 - 2021",
-    type: "Contract",
-    achievements: [
-      "Delivered 8 client projects on time and within budget",
-      "Specialized in cross-platform development with Flutter",
-      "Improved client app performance by average of 45%",
-      "Established mobile development best practices"
-    ],
-    technologies: ["Flutter", "Dart", "SQLite", "Provider", "Figma"],
-    color: "from-orange-400 to-red-600",
-    icon: <Users size={24} />
-  },
-  {
-    id: 4,
     title: "Junior Flutter Developer",
-    company: "WebDev Studios",
-    location: "Los Angeles, CA",
-    period: "2019 - 2020",
+    company: "SlashPlus",
+    location: "Kathmandu, Nepal",
+    period: "2021 - 2022",
     type: "Full-time",
     achievements: [
-      "Completed Flutter certification with 95% score",
-      "Contributed to open-source Flutter packages",
-      "Developed responsive UI components library",
-      "Participated in Google I/O Flutter sessions"
+      "Developed Subscription-based content management, delivery application system used on different enterprises like BBSM",
+      "Specialized in cross-platform development with Flutter",
+      "Leaded Ticket Management and printing app for Sajha Bus",
+      "Developed Android TV video application real-time updates, GPS positing system using USB g-mouse and auto power on/off system using USBsignals"
     ],
-    technologies: ["Flutter", "Dart", "Provider", "HTTP", "Git"],
-    color: "from-purple-400 to-pink-600",
-    icon: <Award size={24} />
+    technologies: ["Flutter", "Dart", "SQLite", "Bloc", "Android TV" , "Socket", "Firebase", "Video Streaming"],
+    color: "from-orange-400 to-red-600",
+    icon: <Users size={24} />
   }
 ]
 
@@ -239,7 +227,7 @@ export function ExperienceSection() {
           className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6"
         >
           {[
-            { label: "Years Experience", value: "4+", icon: "⏰" },
+            { label: "Years Experience", value: "3+", icon: "⏰" },
             { label: "Apps Developed", value: "15+", icon: "📱" },
             { label: "Happy Clients", value: "25+", icon: "😊" },
             { label: "Code Commits", value: "2K+", icon: "💻" }

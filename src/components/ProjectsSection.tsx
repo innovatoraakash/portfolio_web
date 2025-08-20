@@ -6,27 +6,27 @@ import { Github, ExternalLink, Smartphone, Tablet } from 'lucide-react'
 
 const projects = [
   {
-    title: "E-Commerce Flutter App",
-    description: "A complete e-commerce solution with payment integration, user authentication, and real-time inventory management.",
-    tech: ["Flutter", "Dart", "Firebase", "Stripe"],
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+    title: "Disha - Your navMate",
+    description: "Disha brings you a powerful toolkit packed into one simple app — Compass, Level Meter, Altitude Tracker",
+    tech: ["Flutter", "Dart", "Paint", "Sensors"],
+    image: "https://play-lh.googleusercontent.com/7uWBzIMWtSkSam8LrmcoE6Jgpia7tTetsXr2egAdIKFp9DbpQn4zWGF1YSlwWgguXw=w480-h300-rw",
     github: "https://github.com",
-    demo: "https://demo.com",
+    demo: "https://play.google.com/store/apps/details?id=com.aakash.disha",
     color: "from-blue-400 to-cyan-400"
   },
   {
-    title: "Fitness Tracking App",
-    description: "AI-powered fitness app with workout planning, progress tracking, and social features for motivation.",
-    tech: ["Flutter", "TensorFlow", "SQLite", "REST API"],
-    image: "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=400&h=300&fit=crop",
+    title: "Sensora - Noise, Light, Metal",
+    description: "Sensor Kit helps you monitor your surroundings with real-time data from your phone's built-in sensors.",
+    tech: ["Flutter", "TensorFlow", "Sensors","Charts"],
+    image: "https://play-lh.googleusercontent.com/vfV5xSUglqVfRivJCPdi9iz6K3jevBzLu2At07q-G-IL1r9HGi-JAoiab9IHa8qv-Wg=w480-h960-rw?w=400&h=300&fit=crop",
     github: "https://github.com",
-    demo: "https://demo.com",
+    demo: "https://play.google.com/store/apps/details?id=com.aakash.sensora",
     color: "from-green-400 to-emerald-400"
   },
   {
     title: "Social Media Dashboard",
     description: "Beautiful dashboard for managing multiple social media accounts with analytics and scheduling features.",
-    tech: ["Flutter", "GraphQL", "Provider", "Charts"],
+    tech: ["Flutter", "GraphQL", "Riverpod", "Charts"],
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
     github: "https://github.com",
     demo: "https://demo.com",
