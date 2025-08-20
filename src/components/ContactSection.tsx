@@ -5,6 +5,8 @@ import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import * as THREE from 'three'
 import { Mail, Github, Linkedin, Twitter, Send, MapPin, Phone } from 'lucide-react'
+import emailjs from "@emailjs/browser"
+
 
 export function ContactSection() {
   const { ref, inView } = useInView({
@@ -96,17 +98,23 @@ export function ContactSection() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
+  try {
+    await emailjs.send(
+      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,   // your Service ID
+      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // your Template ID
+      formData,                                     // data from state
+      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!   // your Public Key
+    )
 
-    // Simulate form submission
-    //TODO send form to email
-    
-    await new Promise(resolve => setTimeout(resolve, 2000))
-
-    setIsSubmitting(false)
     setSubmitted(true)
     setFormData({ name: '', email: '', subject: '', message: '' })
-
     setTimeout(() => setSubmitted(false), 5000)
+  } catch (err) {
+    console.error("EmailJS Error:", err)
+    alert("Failed to send message. Try again later.")
+  } finally {
+    setIsSubmitting(false)
+  }
   }
 
   const socialLinks = [
