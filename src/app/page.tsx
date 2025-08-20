@@ -1,5 +1,6 @@
 import { HeroSection } from '@/components/HeroSection'
 import { ProjectsSection } from '@/components/ProjectsSection'
+import { BlogSection } from '@/components/BlogsSection'
 import { SkillsSection } from '@/components/SkillsSection'
 import { GameSection } from '@/components/GameSection'
 import { ExperienceSection } from '@/components/ExperienceSection'
@@ -12,9 +13,10 @@ export default function Home() {
       <Navigation />
       <HeroSection />
       <ProjectsSection />
-      <SkillsSection />
-      <GameSection />
       <ExperienceSection />
+      <GameSection />
+      <SkillsSection />
+      <BlogSection />
       <ContactSection />
     </div>
   )
