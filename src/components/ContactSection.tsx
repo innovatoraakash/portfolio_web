@@ -100,10 +100,10 @@ export function ContactSection() {
     setIsSubmitting(true)
   try {
     await emailjs.send(
-      process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,   // your Service ID
-      process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!, // your Template ID
+      process.env.EMAILJS_SERVICE_ID!,   // your Service ID
+      process.env.EMAILJS_TEMPLATE_ID!, // your Template ID
       formData,                                     // data from state
-      process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!   // your Public Key
+      process.env.EMAILJS_PUBLIC_KEY!   // your Public Key
     )
 
     setSubmitted(true)
