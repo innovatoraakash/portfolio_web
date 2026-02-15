@@ -178,7 +178,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <h3 className="text-white font-semibold">Phone</h3>
-                  <p className="text-gray-400">+977 9867204506</p>
+                  <p className="text-gray-400">+977 98672*****</p>
                 </div>
               </motion.div>
 
